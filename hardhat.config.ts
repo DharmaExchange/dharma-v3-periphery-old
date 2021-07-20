@@ -41,9 +41,10 @@ const DEFAULT_COMPILER_SETTINGS = {
     metadata: {
       bytecodeHash: 'none',
     },
-  },
+  },  
 }
 
+ 
 export default {
   networks: {
     hardhat: {
@@ -60,7 +61,43 @@ export default {
     apiKey: `${process.env.BSCSCAN_KEY}`,
   },
   solidity: {
-    compilers: [DEFAULT_COMPILER_SETTINGS],
+    compilers: [  {
+      version: "0.8.0",
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 200,
+        },
+        metadata: {
+        //  bytecodeHash: 'none',
+        },    
+      },
+    },
+    {
+      version: "0.7.0",
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 1_000_000,
+        },
+        metadata: {
+        //  bytecodeHash: 'none',
+        },
+      }, 
+    },
+    {
+      version: "0.7.6",
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 1_000_000,
+        },
+        metadata: {
+        //  bytecodeHash: 'none',
+        },
+      }, 
+    },
+  ],
     overrides: {
       'contracts/NonfungiblePositionManager.sol': LOW_OPTIMIZER_COMPILER_SETTINGS,
       'contracts/test/MockTimeNonfungiblePositionManager.sol': LOW_OPTIMIZER_COMPILER_SETTINGS,
