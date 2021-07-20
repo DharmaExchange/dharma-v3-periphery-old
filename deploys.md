@@ -2,7 +2,7 @@
 
 The latest version of `dharma-v3-core`, `dharma-v3-periphery` are deployed to BSC mainnet
 
-These addresses are final and were deployed from these npm package versions:
+These addresses were deployed using these npm package versions:
 
 - `dharma-v3-core`: [`0.0.1`](https://github.com/Uniswap/dharma-v3-core/tree/v0.0.1)
 - `dharma-v3-periphery`: [`0.0.1`](https://github.com/Uniswap/dharma-v3-periphery/tree/v0.0.1)
