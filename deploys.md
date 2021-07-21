@@ -16,7 +16,7 @@ These addresses were deployed using these npm package versions:
 | Quoter                             | [0xBd85555F80e3de0743ACe421b46eC3A8C97b7bD2](https://bscscan.com/address/0xBd85555F80e3de0743ACe421b46eC3A8C97b7bD2) |
 | SwapRouter                         | [0x90B3c58eeF196c6647EEB5957c5Ad003d3A1B643](https://bscscan.com/address/0x90B3c58eeF196c6647EEB5957c5Ad003d3A1B643) |
 | NFTDescriptor                      | [0xd45071289dB850ee59f64EeA7AC689D117580f0F](https://bscscan.com/address/0xd45071289dB850ee59f64EeA7AC689D117580f0F) |
-| NonfungibleTokenPositionDescriptor | `n/a                                       ` |
+| NonfungibleTokenPositionDescriptor | `0xB365Ce530a7B65c8d93ac5705D79F4DCf4DDDA66` |
 | TransparentUpgradeableProxy        | `n/a                                       ` | 
-| NonfungiblePositionManager         | `n/a                                       ` | 
+| NonfungiblePositionManager         | `0x80c2BDAE4Aa168ce980Ac95B6543859cD0Fc610d` | 
 | V3Migrator                         | `n/a                                       ` |
