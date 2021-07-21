@@ -10,7 +10,7 @@ These addresses were deployed using these npm package versions:
 | Contract                           | Address                                      |
 | ---------------------------------- | -------------------------------------------- |
 | UniswapV3Factory                   | [0xe6b04592B0373980FD8EB8A66Ca12a8Edc937964](https://bscscan.com/address/0xe6b04592B0373980FD8EB8A66Ca12a8Edc937964) |
-| Multicall2                         | [0xffBe6a2253e03a83D1ddE16e4F5f2F58184AbabB](https://bscscan.com/address/0xffBe6a2253e03a83D1ddE16e4F5f2F58184AbabB) | 
+| UniswapInterfaceMulticall          | [0xF7bbE3359443565954b0daC61756931581F3699C](https://bscscan.com/address/0xF7bbE3359443565954b0daC61756931581F3699C) | 
 | ProxyAdmin                         | [0xE317fA8310608b9aCBDC5d9fe8BA3f29dE7665De](https://bscscan.com/address/0xE317fA8310608b9aCBDC5d9fe8BA3f29dE7665De) |
 | TickLens                           | [0xe1d1fa757f44fA8dbE8964dda9BBD8F7C4BFcF09](https://bscscan.com/address/0xe1d1fa757f44fA8dbE8964dda9BBD8F7C4BFcF09) |
 | Quoter                             | [0xBd85555F80e3de0743ACe421b46eC3A8C97b7bD2](https://bscscan.com/address/0xBd85555F80e3de0743ACe421b46eC3A8C97b7bD2) |
