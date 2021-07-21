@@ -12,15 +12,12 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deploy } = deployments
   const { deployer } = await getNamedAccounts()
 
-  await deploy("NonfungibleTokenPositionDescriptor", {
+  await deploy("NonfungiblePositionManager", {
     from: deployer,
-    args: ["0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"],
-    libraries: {
-      NFTDescriptor: "0xd45071289dB850ee59f64EeA7AC689D117580f0F"
-    },
+    args: ["0x1b15f28630b875c4c83bfbfbfc9b230dec8c33b8", "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c", "0xd45071289dB850ee59f64EeA7AC689D117580f0F"],
     log: true,
     skipIfAlreadyDeployed: true,
   })
 }
 export default func
-func.tags = ["NonfungibleTokenPositionDescriptor"]
+func.tags = ["NonfungiblePositionManager"]

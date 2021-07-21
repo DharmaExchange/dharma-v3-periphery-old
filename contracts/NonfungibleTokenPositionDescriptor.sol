@@ -16,11 +16,11 @@ import './libraries/TokenRatioSortOrder.sol';
 /// @title Describes NFT token positions
 /// @notice Produces a string containing the data URI for a JSON metadata string
 contract NonfungibleTokenPositionDescriptor is INonfungibleTokenPositionDescriptor {
-    address private constant DAI = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
-    address private constant USDC = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
-    address private constant USDT = 0xdAC17F958D2ee523a2206206994597C13D831ec7;
-    address private constant TBTC = 0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa;
-    address private constant WBTC = 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599;
+    address private constant DAI = 0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3;
+    address private constant USDC = 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d;
+    address private constant USDT = 0x55d398326f99059fF775485246999027B3197955;
+    address private constant TBTC = 0x51bd63F240fB13870550423D208452cA87c44444; //BELT-BTC on BSC ?
+    address private constant WBTC = 0xd47Ba9A00EB87B9E753c6651e402DAD7D9f1C4Ca;
 
     address public immutable WETH9;
 
@@ -58,9 +58,9 @@ contract NonfungibleTokenPositionDescriptor is INonfungibleTokenPositionDescript
                     quoteTokenAddress: quoteTokenAddress,
                     baseTokenAddress: baseTokenAddress,
                     quoteTokenSymbol: quoteTokenAddress == WETH9
-                        ? 'ETH'
+                        ? 'BNB'
                         : SafeERC20Namer.tokenSymbol(quoteTokenAddress),
-                    baseTokenSymbol: baseTokenAddress == WETH9 ? 'ETH' : SafeERC20Namer.tokenSymbol(baseTokenAddress),
+                    baseTokenSymbol: baseTokenAddress == WETH9 ? 'BNB' : SafeERC20Namer.tokenSymbol(baseTokenAddress),
                     quoteTokenDecimals: IERC20Metadata(quoteTokenAddress).decimals(),
                     baseTokenDecimals: IERC20Metadata(baseTokenAddress).decimals(),
                     flipRatio: _flipRatio,
